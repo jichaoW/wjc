@@ -17,7 +17,7 @@
 			}
 		},
 		components: {
-			"index-header" : header,
+			"indexHeader" : header,
 			"swiper" : swiper
 		}
 	}

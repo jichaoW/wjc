@@ -23,6 +23,7 @@
     name: 'carrousel',
     data() {
       return {
+      	notNextTick: true,
         swiperOption: {
           autoplay: 3000,
           direction: 'horizontal',
@@ -39,8 +40,7 @@
     }
   }
 </script>
-<style scoped>
- @import '../../../node_modules/swiper/dist/css/swiper.min.css';
+<style>
 	.img-con{
 		width: 100%;
 		height: 0;
