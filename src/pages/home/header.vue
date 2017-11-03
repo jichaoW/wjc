@@ -19,6 +19,7 @@
 	.mp-header{
 		height: .88rem;
 		background-color: #00bcd4;
+		display: flex;
 	}
 	.icon-xiangzuo{
 		float: left;
@@ -32,7 +33,8 @@
 	}
 	.mp-header-title{
 		float: left;
-		width: 5.38rem;
+		/*width: 5.38rem;*/
+		flex: 1;
 		height: 0.6rem;
 		background-color: #fff;
 		border-radius: .06rem;
@@ -54,6 +56,7 @@
 	.mp-header-right{
 		height: .88rem;
 		line-height: .88rem;
+		float: right;
 	}
 	.mp-nav-city{
 		height: .88rem;
