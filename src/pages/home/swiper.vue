@@ -23,6 +23,7 @@
     name: 'carrousel',
     data() {
       return {
+        notNextTick: true,
         swiperOption: {
           autoplay: 3000,
           direction: 'horizontal',
