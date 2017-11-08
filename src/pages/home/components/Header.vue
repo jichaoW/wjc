@@ -6,7 +6,7 @@
 			<span class="mp-single-line">输入城市/景点/游玩主题</span>
 		</div>
 		<div class="mp-header-right">
-			<span class="mp-nav-city">北京<i class="tri-down"></i></span>
+			<span class="mp-nav-city">北京</span><i class="tri-down"></i>
 		</div>
 	</div>
 </template>
@@ -56,13 +56,13 @@
 	.mp-header-right{
 		height: .88rem;
 		line-height: .88rem;
+		position: relative;
 		float: right;
 	}
 	.mp-nav-city{
 		height: .88rem;
 		float: left;
 		width: 1.12rem;
-		position: relative;
 		padding-left: .2rem;
 		color: #fff;
 	}

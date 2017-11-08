@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from '@/app/App'
 import router from './router'
+import store from './vuex'
 import Fastclick from 'fastclick';
 
 import './iconfont/iconfont.css';
@@ -14,6 +15,7 @@ Fastclick.attach(document.body);
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

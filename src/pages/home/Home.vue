@@ -1,25 +1,38 @@
 <template>
-	
 	<div>
-	<index-header />
-	<swiper />
+		<index-header />
+		<swiper />
+		<indexIconSwiper/>
+		<activity />
 	</div>
 </template>
 <script>
-	import header from './header.vue';
-	import swiper from './swiper.vue';
+	import header from './components/Header'
+	import swiper from './components/Swiper'
+	import indexIconSwiper from './components/IndexIconSwiper'
+	import activity from './components/Activity'
+	import axios from 'axios'
+	import {AJAX_GET_DATA} from './types.js'
+	import { mapState, mapActions } from 'vuex'
 	// import { swiper, swiperSlide } from 'vue-awesome-swiper';
+
 	export default {
 		name: "home",
 		data() {
 			return {
-				msg: "home"
+				iconSwiperInfo: []
 			}
 		},
+		mounted() {
+			this.$store.dispatch(AJAX_GET_DATA);
+		},
 		components: {
-			"index-header" : header,
-			"swiper" : swiper
+			"indexHeader" : header,
+			"swiper" : swiper,
+			"activity" : activity,
+			"indexIconSwiper" : indexIconSwiper
 		}
+
 	}
 </script>
 <style>

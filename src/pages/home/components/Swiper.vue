@@ -13,7 +13,7 @@
     </swiper-slide>
     
     <!-- Optional controls -->
-    <div class="swiper-pagination"  slot="pagination"></div>
+    <div class="swiper-pagination banner-dot"  slot="pagination"></div>
    
   </swiper>
 </template>
@@ -23,7 +23,7 @@
     name: 'carrousel',
     data() {
       return {
-        notNextTick: true,
+      	notNextTick: true,
         swiperOption: {
           autoplay: 3000,
           direction: 'horizontal',
@@ -40,8 +40,7 @@
     }
   }
 </script>
-<style scoped>
- @import '../../../node_modules/swiper/dist/css/swiper.min.css';
+<style>
 	.img-con{
 		width: 100%;
 		height: 0;
@@ -53,7 +52,7 @@
 	.swiper-pagination-bullet{
 
 	} 
-	.swiper-pagination-bullet-active{
-		background: red;
+	.banner-dot .swiper-pagination-bullet-active{
+		background: #fff;
 	}
 </style>
